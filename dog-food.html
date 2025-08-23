@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Food - Paws & Whiskers</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="index.html" class="logo"><i class="fas fa-paw"></i> Paws & Whiskers</a>
+    <ul class="menu">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#products">Products</a></li>
+      <li><a href="index.html#services">Services</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="products-section">
+  <h2>Dog Food</h2>
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="pedigree.jpeg" alt="Premium Dog Food">
+      <h3>Premium Dog Food</h3>
+      <p class="price">₹1,299</p>
+      <button class="add-to-cart btn card-btn"
+              data-name="Premium Dog Food"
+              data-price="1299"
+              data-img="pedigree.jpeg">
+        <i class="fas fa-cart-plus"></i> Add to Cart
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="well.jpeg" alt="Puppy Starter Pack">
+      <h3>Puppy Starter Pack</h3>
+      <p class="price">₹899</p>
+      <button class="add-to-cart btn card-btn"
+              data-name="Puppy Starter Pack"
+              data-price="899"
+              data-img="well.jpeg">
+        <i class="fas fa-cart-plus"></i> Add to Cart
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="castor.jpeg" alt="Grain-Free Kibble">
+      <h3>Grain-Free Kibble</h3>
+      <p class="price">₹1,499</p>
+      <button class="add-to-cart btn card-btn"
+              data-name="Grain-Free Kibble"
+              data-price="1499"
+              data-img="castor.jpeg">
+        <i class="fas fa-cart-plus"></i> Add to Cart
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="frshpet.jpeg" alt="Wet Dog Food Pack">
+      <h3>Wet Dog Food Pack</h3>
+      <p class="price">₹699</p>
+      <button class="add-to-cart btn card-btn"
+              data-name="Wet Dog Food Pack"
+              data-price="699"
+              data-img="frshpet.jpeg">
+        <i class="fas fa-cart-plus"></i> Add to Cart
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Cart handling -->
+<script src="sc.js"></script>
+</body>
+</html>

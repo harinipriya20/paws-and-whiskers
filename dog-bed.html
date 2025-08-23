@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Beds - Paws & Whiskers</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="index.html" class="logo"><i class="fas fa-paw"></i> Paws & Whiskers</a>
+    <ul class="menu">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#products">Products</a></li>
+      <li><a href="index.html#services">Services</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="products-section">
+  <h2>Dog Beds</h2>
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="ortho.jpeg" alt="Cozy Pet Bed">
+      <h3>Cozy Pet Bed</h3>
+      <p class="price">₹1,899</p>
+      <button class="add-to-cart btn card-btn"
+              data-name="Cozy Pet Bed"
+              data-price="1899"
+              data-img="ortho.jpeg">
+        <i class="fas fa-cart-plus"></i> Add to Cart
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="ovis.jpeg" alt="Luxury Dog Bed">
+      <h3>Luxury Dog Bed</h3>
+      <p class="price">₹2,499</p>
+      <button class="add-to-cart btn card-btn"
+              data-name="Luxury Dog Bed"
+              data-price="2499"
+              data-img="ovis.jpeg">
+        <i class="fas fa-cart-plus"></i> Add to Cart
+      </button>
+    </div>
+
+    <div class="product-card">
+      <img src="bolstar.jpeg" alt="Travel Bed">
+      <h3>Travel Bed</h3>
+      <p class="price">₹1,299</p>
+      <button class="add-to-cart btn card-btn"
+              data-name="Travel Bed"
+              data-price="1299"
+              data-img="bolstar.jpeg">
+        <i class="fas fa-cart-plus"></i> Add to Cart
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Cart handling -->
+<script src="sc.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart - Paws & Whiskers</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+  <div class="navbar">
+    <a href="#home" class="logo">
+      <i class="fas fa-paw"></i>
+      <span>Paws & Whiskers</span>
+    </a>
+    <ul class="menu">
+      <li><a href="index.html#home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="index.html#products"><i class="fas fa-store"></i> Products</a></li>
+      <li><a href="index.html#services"><i class="fas fa-cut"></i> Services</a></li>
+      <li><a href="index.html#about"><i class="fas fa-info-circle"></i> About</a></li>
+      <li><a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <input type="text" placeholder="Search products..." class="search-input">
+      <button class="btn-search"><i class="fas fa-search"></i></button>
+      <a href="cart.html" class="nav-icon"><i class="fas fa-shopping-cart"></i> Cart</a>
+      <a href="login.html" class="nav-icon"><i class="fas fa-user"></i> Login</a>
+    </div>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+  </div>
+</header>
+
+
+<section id="cart">
+  <h2>Your Cart</h2>
+  <div class="cart-items"></div>
+  <p class="total">Total: ₹<span id="total">0</span></p>
+
+  <button id="checkoutBtn">Place Order</button>
+</section>
+
+<script src="sc.js"></script>
+</body>
+</html>
