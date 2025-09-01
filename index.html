@@ -238,8 +238,18 @@ document.addEventListener("DOMContentLoaded", () => {
   updateSingleProductClass(); // check on page load too
 });
 </script>
+  <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
 
 
 
 </body>
 </html>
+
