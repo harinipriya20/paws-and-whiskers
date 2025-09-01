@@ -751,39 +751,35 @@ footer {
 /* ----------- Mobile view styles -------------- */
 @media (max-width: 768px) {
 
-  /* Navbar */
-  .menu {
-    display: none; /* hidden by default */
-    flex-direction: column;
-    gap: 14px;
-    background: #fff;
-    padding: 20px;
-    position: absolute;
-    top: 100%;
-    right: 5%;
-    width: 220px;
-    box-shadow: var(--shadow);
-    border-radius: 14px;
+  .navbar {
+    flex-direction: column; /* vertical stack in mobile */
+    align-items: flex-start;
   }
 
-  .menu.active {
-    display: flex; /* show when toggled */
+  /* Top row: logo + cart + login + menu */
+  .nav-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .menu-toggle {
-    display: block; /* hamburger visible only in mobile */
-    cursor: pointer;
-  }
-
-  .nav-right {
-    flex: 1;
-    justify-content: flex-end;
-  }
-
-  /* Search bar full width */
+  /* Search bar full width separate row */
   .search-bar {
     width: 100%;
-    margin-top: 10px;
+    margin: 10px 0;
+  }
+
+  /* Make icons aligned properly */
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav-right i {
+    font-size: 20px;
+    cursor: pointer;
   }
 
   /* Hero section */
@@ -846,3 +842,4 @@ footer {
     align-items: flex-start;
   }
 }
+
